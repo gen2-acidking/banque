@@ -408,7 +408,6 @@ fn cmd_del(args: &[String]) -> i32 {
     0
 }
 
-// Professional help screen in the style of `git help` or `man` SYNOPSIS
 fn cmd_help(_: &[String]) -> i32 {
     // ------------------------------------------------------------------
     // 1. Collect & measure

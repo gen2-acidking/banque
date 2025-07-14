@@ -1,6 +1,6 @@
 # Bank
 
-![Bank Logo](bank-logo.png)
+![Bank Logo](banque.png)
 
 Command storage and execution tool. Store frequently used commands and run them by index.
 
