@@ -120,7 +120,8 @@ main() {
     echo
     log_info "Ready to use: $ALIAS_NAME"
     log_info "Try: $ALIAS_NAME help"
-    echo
+    log_info "Refresh the terminal fucking subshell can't. Make a pull request if you want to fix it"
+    echos
 }
 
 main "$@"
