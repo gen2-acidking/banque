@@ -1,5 +1,5 @@
 #!/bin/bash
-
+################
 set -e
 
 BINARY_NAME="banque"
