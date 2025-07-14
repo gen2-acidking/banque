@@ -2,12 +2,12 @@
 
 ![Banque](banque.png)
 
-Command storage and execution tool. Store frequently used commands and run them by index.
+Bank commands you want to use often.
 
 ---
 
 ## Install
-?
+
 Choose your binary type:
 
 ```bash
