@@ -46,10 +46,11 @@ get_latest_release() {
         log_error "Neither curl nor wget found"
         exit 1
     fi
+    
     if [ "$USE_STATIC" = true ]; then
-        DOWNLOAD_URL=$(echo "$RELEASE_INFO" | grep -o "https://.*${BINARY_NAME}-linux-musl.*" | head -1)
+        DOWNLOAD_URL=$(echo "$RELEASE_INFO" | grep -o "https://.*${BINARY_NAME}-linux-musl-${ARCH}.*" | head -1)
     else
-        DOWNLOAD_URL=$(echo "$RELEASE_INFO" | grep -o "https://.*${BINARY_NAME}-linux.*" | head -1)
+        DOWNLOAD_URL=$(echo "$RELEASE_INFO" | grep -o "https://.*${BINARY_NAME}-linux-${ARCH}.*" | head -1)
     fi
 
     if [ -z "$DOWNLOAD_URL" ]; then
@@ -127,7 +128,7 @@ verify_installation() {
 }
 
 usage() {
-    echo "Usage: $0 [--static]"
+    echo "Usage: curl -sSL https://raw.githubusercontent.com/gen2-acidking/banque/master/install.sh | bash [-s -- --static]"
     echo "  --static  Install the statically linked binary (default is dynamically linked)"
     exit 1
 }
@@ -147,7 +148,7 @@ main() {
     done
 
     echo "========================================"
-    echo "  Bank Command Tool Installation"
+    echo "  Banque Command Tool Installation"
     echo "========================================"
     echo
 
