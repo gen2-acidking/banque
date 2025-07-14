@@ -15,7 +15,7 @@ Choose your binary type:
 curl -sSL https://github.com/gen2-acidking/banque/raw/master/install.sh | bash
 
 # Static (musl(based))
-curl -sSL https://github.com/gen2-acidking/banque/raw/master/install-static.sh | bash
+curl -sSL https://github.com/gen2-acidking/banque/raw/master/install.sh | bash -s -- --static
 
 # After install, run:
 banque help
