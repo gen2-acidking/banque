@@ -7,7 +7,7 @@ Command storage and execution tool. Store frequently used commands and run them 
 ---
 
 ## Install
-?
+
 Choose your binary type:
 
 ```bash
